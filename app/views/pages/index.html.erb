@@ -1,0 +1,36 @@
+<h1>The Forecast</h1>
+
+<table>
+<tr><th>Date</th>
+<th>High</th>
+<th>Low</th>
+<th>Condition</th></tr>
+<% @temp.each do |forecast| %>
+<tr>
+<td><%= forecast["date"] %></td>
+<td><%= forecast["high"] %></td>
+<td><%= forecast["low"] %></td>
+<td><%= forecast["text"] %></td>
+
+
+<% end %>
+</tr>
+</table>
+<h1>Oakland</h1>
+
+<table>
+<tr><th>Date</th>
+<th>High</th>
+<th>Low</th>
+<th>Condition</th></tr>
+<% @temp_oakland.each do |forecast| %>
+<tr>
+<td><%= forecast["date"] %></td>
+<td><%= forecast["high"] %></td>
+<td><%= forecast["low"] %></td>
+<td><%= forecast["text"] %></td>
+
+
+<% end %>
+</tr>
+</table>
